@@ -1,18 +1,24 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require('path');
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'static')));
+
+app.set('views', path.join(__dirname, 'views'));
+
+app.set('view engine', 'mustache')
+app.engine('mustache', require('hogan-middleware').__express)
 
 // parse requests of content-type: application/json
 app.use(bodyParser.json());
 
 // parse requests of content-type: application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 
-app.get("/", (req, res) => {
-  res.json({ message: "Fraud detection app is online" });
-});
+app.use('/', require('./routes/index-route'))
 
 
 // set port, listen for requests

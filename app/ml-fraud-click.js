@@ -1,0 +1,1 @@
+const click = new Map();

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Click Detection Web App</title>
+</head>
+<body>
+    <h1>Click Fraud Detection</h1>
+    <h2>App is under making...</h2>
+
+    <table>
+        <tr>
+            <th>Record No_</th><th>Channel</th><th>OS</th><th>Device</th><th>App</th><th>IP Address</th><th>Click Time</th>
+        </tr>
+        {{#records}}
+        <tr>
+            <td>{{rno}}</td><td>{{ch}}</td><td>{{os}}</td><td>{{dev}}</td><td>{{app}}</td><td>{{ip}}</td><td>{{clk_time}}</td>
+        </tr>
+        {{/records}}
+    </table>
+</body>
+</html>
