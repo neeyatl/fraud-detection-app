@@ -17,7 +17,7 @@ After that, in the same root folder, run the command "node server". This will st
 
 Then, in your browser, type the address "localhost:3000" and press enter. This will show the initial page of the website. This page is supposed to ask user input and it isn't ready yet.
 
-In order to show the demo, you must go the the address "localhost:3000/data". This route will use a dummy dataset from within the project and it'll show a demo of how the user interface will look like.
+In order to show the demo, you must go to the address "localhost:3000/data". This route will use a dummy dataset from within the project and it'll show a demo of how the user interface will look like.
 
 ## Authors
 
