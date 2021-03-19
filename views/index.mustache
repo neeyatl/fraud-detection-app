@@ -5,19 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fraud Click Detection Web App</title>
+    <style>
+        .header { 
+            position: sticky; 
+            top:0; 
+        }
+        
+        .center-text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Click Fraud Detection</h1>
-
-    <table>
-        <tr>
-            <th>Record No_</th><th>Channel</th><th>OS</th><th>Device</th><th>App</th><th>IP Address</th><th>Click Time</th>
-        </tr>
-        {{#records}}
-        <tr>
-            <td>{{rno}}</td><td>{{ch}}</td><td>{{os}}</td><td>{{dev}}</td><td>{{app}}</td><td>{{ip}}</td><td>{{clk_time}}</td>
-        </tr>
-        {{/records}}
+    {{> bootstrap}}
+    
+    <div class="jumbotron center-text">
+        <h1>Click Fraud Detection</h1>
+        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+    </div>
+    
+    <table class="table table-hover table-bordered center-text">
+        <thead class="header thead-light">
+            <tr>
+                <th class="header" scope="col">Record No_</th>
+                <th class="header" scope="col">Channel</th>
+                <th class="header" scope="col">OS</th>
+                <th class="header" scope="col">Device</th>
+                <th class="header" scope="col">App</th>
+                <th class="header" scope="col">IP Address</th>
+                <th class="header" scope="col">Click Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#records}}
+            <tr>
+                <td>{{rno}}</td>
+                <td>{{ch}}</td>
+                <td>{{os}}</td>
+                <td>{{dev}}</td>
+                <td>{{app}}</td>
+                <td>{{ip}}</td>
+                <td>{{clk_time}}</td>
+            </tr>
+            {{/records}}
+        </tbody>
     </table>
+    
 </body>
 </html>
