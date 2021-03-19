@@ -5,8 +5,8 @@ The app can be fed datasets of user clicks on ads displayed on a website, and it
 ## Dependencies
 
 Internet Connection
-Must have node.js installed on your system.
 
+Must have node.js installed on your system.
 [Link to download node.js](https://nodejs.org/en/download/)
 
 ## To run the project:
