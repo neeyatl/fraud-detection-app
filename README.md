@@ -12,7 +12,7 @@ Must have node.js installed on your system.
 ## To run the project:
 
 Clone the repository onto your system.
-After cloning, open the terminal/command prompt, go the root folder of the project and run the command "npm install". This command will download all the files necessary to run the project successfully on your system.
+After cloning, open the terminal/command prompt, go the root folder of the project, and run the command "npm install". This command will download all the files necessary to run the project successfully onto your system.
 After that, in the same root folder, run the command "node server". This will start the localhost server on your system.
 
 Then, in your browser, type the address "localhost:3000" and press enter. This will show the initial page of the website. This page is supposed to ask user input and it isn't ready yet.
