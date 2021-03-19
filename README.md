@@ -5,7 +5,9 @@ The app can be fed datasets of user clicks on ads displayed on a website, and it
 ## Dependencies
 
 Internet Connection
-Must have node.js installed on your system. [Link to download node.js](https://nodejs.org/en/download/)
+Must have node.js installed on your system.
+
+[Link to download node.js](https://nodejs.org/en/download/)
 
 ## To run the project:
 
@@ -20,9 +22,10 @@ In order to show the demo, you must go the the address "localhost:3000/data". Th
 ## Authors
 
 Neeyat Lotlikar
-[Aurum1611](https://github.com/Aurum1611)
+[@Aurum1611](https://github.com/Aurum1611)
 
 ## Acknowledgements
 
 [Twitter Bootstrap](https://github.com/twbs/bootstrap)
+
 [Node js](https://nodejs.org/en/)
