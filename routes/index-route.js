@@ -20,7 +20,7 @@ router.get("", (req, res) => {
 });
 
 router.get("/data", (req, res) => {
-    fs.readFile('C:\\Users\\Neeyat\\Downloads\\Data.csv', (err, data) => { 
+    fs.readFile('./dummy-data/Data.csv', (err, data) => { 
         
         if( err ) 
             throw err;
